@@ -68,16 +68,17 @@ header a img{
     background-color: rgb(5, 5, 5);
 }
 
-.mt-6{
-    margin-top: 60px;
-    margin-left: 20%;
+.flex{
+    display: flex;
 }
 
-.github{
-    margin-left: 80%;
+.mt-6{
+    margin-top: 60px;
+    margin-left: 10%;
 }
 
 .container{
+    visibility: hidden;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
