@@ -78,7 +78,7 @@ header a img{
 }
 
 .container{
-    visibility: hidden;
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
