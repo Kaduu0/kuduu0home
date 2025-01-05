@@ -77,8 +77,13 @@ header a img{
     margin-left: 10%;
 }
 
+.cabecalho-logo{
+    width: 32px;
+    height: 32px;
+    padding-top: 7px;
+}
+
 .container{
-    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
