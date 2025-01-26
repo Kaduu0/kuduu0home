@@ -110,7 +110,7 @@ header a img{
 
 .item-barra-lateral{
     margin-top: 2px;
-    transition: .2s;
+    transition: 0.5s;
 }
 
 .elemento:hover{
@@ -119,6 +119,8 @@ header a img{
 
 .item-barra-lateral:hover{
     background-color: rgb(24, 24, 24);
+    border-radius: 50%;
+    
 }
 
 @media screen and (min-width: 1px) and (max-width: 319px) {
