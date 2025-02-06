@@ -17,20 +17,43 @@
             <img class="cabecalho-logo" src="assets/icones/casa.png" alt="logo">
             <h1>kuduu0home</h1>
         </div>
-
-        <!-- Link para o github -->
         
         <div>
+
+            <!-- Link para o github -->
+
             <a href="https://github.com/kaduu21/kuduu0home" target="_blank">
                 <img src="assets/icones/github.png" alt="github">
             </a>
+
+            <!-- Botão de configuração -->
+                <img id="config-button" src="assets/icones/config.png" alt="configuração">
         </div>
+
     </header>
 
-    <nav id="barra-lateral">
+    <!-- Pop-up de configuração -->
+    <div id="config-popup" class="popup">
+
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Configurações</h2>
+
+            <label class="config-option">
+                <input type="checkbox" id="toggle-containers"> Ocultar/Desocultar Containers
+            </label>
+
+            <br>
+            
+            <label class="config-option">
+                <input type="checkbox" id="toggle-sidebar"> Ocultar/Desocultar Barra Lateral
+            </label>
+        </div>
+
+    </div>
 
         <!-- Barra lateral -->
-
+    <nav id="barra-lateral">
         <div>
             <ul>
                 <a href="https://discord.com/channels/@me" target="_blank">
@@ -60,6 +83,11 @@
                 <a href="https://www.twitch.tv/" target="_blank">
                     <li class="item-barra-lateral">
                         <img src="assets/icones/twitch.png" alt="twitch">
+                    </li>
+                </a>
+                <a href="https://www.twitch.tv/" target="_blank">
+                    <li class="item-barra-lateral">
+                        <img src="assets/icones/gamejolt.png" class="ajuste" alt="gamejolt">
                     </li>
                 </a>
                 <a href="https://web.whatsapp.com/" target="_blank">
