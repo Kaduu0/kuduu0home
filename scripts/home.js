@@ -4,22 +4,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeButton = document.querySelector('.close');
     const toggleContainers = document.getElementById('toggle-containers');
     const toggleSidebar = document.getElementById('toggle-sidebar');
-    const toggleGithub = document.getElementById('toggle-github');
     const containers = document.querySelectorAll('.container');
     const sidebar = document.getElementById('barra-lateral');
-    const githubLink = document.getElementById('github-link');
 
     configButton.addEventListener('click', function() {
-        configPopup.style.display = 'block';
+        configPopup.classList.add('show');
     });
 
     closeButton.addEventListener('click', function() {
-        configPopup.style.display = 'none';
+        configPopup.classList.remove('show');
     });
 
     window.addEventListener('click', function(event) {
         if (event.target == configPopup) {
-            configPopup.style.display = 'none';
+            configPopup.classList.remove('show');
         }
     });
 
@@ -31,9 +29,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
     toggleSidebar.addEventListener('change', function() {
         sidebar.style.display = this.checked ? 'none' : 'block';
-    });
-
-    toggleGithub.addEventListener('change', function() {
-        githubLink.style.display = this.checked ? 'none' : 'block';
     });
 });

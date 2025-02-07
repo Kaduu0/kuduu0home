@@ -37,6 +37,7 @@ ul{
 
 body{
     height: 100%;
+    margin: 0;
 }
 
 main{
@@ -141,10 +142,15 @@ header a img{
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
     color: black;
-    transition: 1s;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.popup.show {
+    display: block;
+    opacity: 1;
 }
 
 .popup-content {
@@ -156,7 +162,12 @@ header a img{
     border-radius: 50px;
     width: 20%;
     color: black;
-    transition: 1s;
+    transition: transform 0.3s ease;
+    transform: translateY(-50px);
+}
+
+.popup.show .popup-content {
+    transform: translateY(0);
 }
 
 .close {
