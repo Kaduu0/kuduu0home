@@ -7,6 +7,27 @@ document.addEventListener('DOMContentLoaded', function() {
     const containers = document.querySelectorAll('.container');
     const sidebar = document.getElementById('barra-lateral');
 
+    // Função para carregar configurações do localStorage
+    function loadSettings() {
+        const containersHidden = localStorage.getItem('containersHidden') === 'true';
+        const sidebarHidden = localStorage.getItem('sidebarHidden') === 'true';
+
+        toggleContainers.checked = containersHidden;
+        toggleSidebar.checked = sidebarHidden;
+
+        containers.forEach(container => {
+            container.style.display = containersHidden ? 'none' : 'flex';
+        });
+
+        sidebar.style.display = sidebarHidden ? 'none' : 'block';
+    }
+
+    // Função para salvar configurações no localStorage
+    function saveSettings() {
+        localStorage.setItem('containersHidden', toggleContainers.checked);
+        localStorage.setItem('sidebarHidden', toggleSidebar.checked);
+    }
+
     configButton.addEventListener('click', function() {
         configPopup.classList.add('show');
     });
@@ -25,9 +46,14 @@ document.addEventListener('DOMContentLoaded', function() {
         containers.forEach(container => {
             container.style.display = this.checked ? 'none' : 'flex';
         });
+        saveSettings();
     });
 
     toggleSidebar.addEventListener('change', function() {
         sidebar.style.display = this.checked ? 'none' : 'block';
+        saveSettings();
     });
+
+    // Carregar configurações ao iniciar
+    loadSettings();
 });
