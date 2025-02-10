@@ -38,6 +38,7 @@ ul{
 body{
     height: 100%;
     margin: 0;
+    background-color: black;
 }
 
 main{
@@ -68,10 +69,6 @@ header a img{
     height: 100%;
     text-align: center;
     position: fixed;
-}
-
-#fundo-preto{
-    background-color: rgb(5, 5, 5);
 }
 
 .flex{
