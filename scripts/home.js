@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const containers = document.querySelectorAll('.container');
     const sidebar = document.getElementById('barra-lateral');
 
-    // Função para carregar configurações do localStorage
     function loadSettings() {
         const containersHidden = localStorage.getItem('containersHidden') === 'true';
         const sidebarHidden = localStorage.getItem('sidebarHidden') === 'true';
@@ -22,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
         sidebar.style.display = sidebarHidden ? 'none' : 'block';
     }
 
-    // Função para salvar configurações no localStorage
     function saveSettings() {
         localStorage.setItem('containersHidden', toggleContainers.checked);
         localStorage.setItem('sidebarHidden', toggleSidebar.checked);
@@ -54,6 +52,5 @@ document.addEventListener('DOMContentLoaded', function() {
         saveSettings();
     });
 
-    // Carregar configurações ao iniciar
     loadSettings();
 });
