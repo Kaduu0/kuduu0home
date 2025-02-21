@@ -43,8 +43,10 @@ header{
     float: right;
 }
 
-header img{ 
+header div img{ 
     width: 32px;
+    height: 32px;
+    margin-top: 5px;
     margin-right: 10px;
 }
 
@@ -95,6 +97,10 @@ main{
     margin-bottom: 10px;
 }
 
+.flex{
+    display: flex;
+}
+
 .paragrafo{
     font-size: 17px;
     margin-top: 5px;
@@ -109,6 +115,12 @@ main{
 
 .ml-2{
     margin-left: 10px;
+}
+
+.github{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
 }
 
 li a:hover{
