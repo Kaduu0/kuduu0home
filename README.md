@@ -7,7 +7,7 @@ Kuduu0home é uma home page simples, focada em agradar o desenvolvedor (kuduu0/k
 
 - cabeçalho
 
-lá tem o nome da pagina, link para o código no github e uma aba de configurações (não tem muita configuração ainda mas temos planos para melhorar isso)
+lá tem o nome da pagina, link para o código no github e uma aba de configurações (para ocultar e mostrar alguns elementos do site)
 
 - painel lateral
 
@@ -17,4 +17,12 @@ Agora temos o painel lateral, que tem a função de te enviar para outras págin
 
 Os blocos de links servem para redirecionar o usuário para alguma categoria dentro do kuduu0links, uma versão compacta do grande FMHY ou pode redirecionar diretamente para o site de links FMHY, fica de sua escolha
 
-# Kuduu0home atual versão V1.0 
+# Como usar
+
+1. faça o site Kuduu0home ser sua homepage padrão
+   
+  Faça o link do site ser o sua nova homepage! caso o seu navegador não tenha essa opção recomendo o uso da extenção: [Custom New Tab URL](https://chromewebstore.google.com/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia?hl=pt-BR)
+
+2. customize você mesmo!
+
+  Caso não goste da seleção de cores e tenha um conhecimento prévio sobre HTML, CSS e JS, é possivél baixar o .zip ou clonar o projeto para criar sua propria e customizada versão do Kuduu0home, recomendado o uso do serviço de hospedagem gratuito: [Netlify](https://app.netlify.com/teams/dev-front-end/sites), pois caso faça o deploy do site por meio do GitHub, netlify atualizará automaticamente após alguns minutos DE GRAÇA! 
