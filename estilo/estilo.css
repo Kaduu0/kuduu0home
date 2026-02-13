@@ -19,6 +19,10 @@ div input{
     z-index: 1;
 }
 
+div form input{
+    margin-left: 10%;
+}
+
 div div h2{
     margin-bottom: 20px;
 }
