@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Pixelify Sans', sans-serif;
+}
+
+body{
+    background-color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+}
+
+h1 {
+    font-size: 50px;
+}  
+
+.oculto{
+    display:none !important;
+}
+
+#googleShit {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo {
+    padding: 10px;
+    color: #9c9c9c;
+}
+#titulo :hover {
+    color: #ffffff;
+    cursor: default;
+}
+
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+}
+
+.buscar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#campo-pesquisa {
+    width: 100%;
+    padding: 10px;
+    border: 3px solid #9c9c9c;
+    border-radius: 0px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+
+}
+#campo-pesquisa:hover{
+    padding: 15px;
+    border: 3px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+.main-menu{
+    display: flex;
+    justify-content: center;
+
+}
+
+.menu summary{
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.menu summary::-webkit-details-marker{
+    display: none;
+}
+
+.menu summary::before{
+    content: "▶";
+    display: inline-block;
+    margin-right: 8px;
+    transition: transform .2s ease;
+}
+
+.menu[open] summary::before{
+    transform: rotate(90deg);
+}
+
+.menu a{
+    display: block;
+    margin-left: 24px;
+    margin-top: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: rgb(255, 244, 159);
+}
